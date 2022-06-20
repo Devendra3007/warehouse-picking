@@ -10,8 +10,6 @@ from flask import jsonify
 import pytz
 import datetime
 
-
-
 app = Flask(__name__,static_url_path='/static')
 
 app.config['MYSQL_HOST'] = "localhost"
@@ -22,7 +20,7 @@ app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
 mysql = MySQL(app)
 
-@app.route('/homepage',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def homepage():
     return render_template('HomePage.html')
 
