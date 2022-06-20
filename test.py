@@ -335,4 +335,4 @@ def current_location():
    return json.dumps(data,indent=4)
     
 if __name__ == '__main__':
-   app.run(debug=True,host="https://warehousepicking.herokuapp.com") 
+   app.run(debug=True) 
