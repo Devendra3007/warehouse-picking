@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atlas Copco Admin Panel</title>
+     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script>
+     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    body {
+           padding: 0;
+           margin: 0;
+            font-family: "Verdana";
+            background-position: center top;
+            background-image: url("{{ url_for('static', filename='Atlas.jpg') }}");
+            background-attachment: fixed;
+           ;
+           }
+               .nav {
+               align-content: center;
+               overflow: hidden;
+               background-color: #fff;
+               font-family: Verdana;
+               width: 100%;
+               height: 100px;
+              
+               }
+               .nav-link{
+                 font-family: Verdana;
+               float: center ;
+               font-size: 16px;
+               color: #01A3C9;
+               margin-right: 20px;
+               text-decoration: none;
+               background-color:transparent;
+               
+               }
+   
+               .nav-link:hover  {
+               background-color:#01A3C9 ;
+               color: #fff;
+               }
+   
+   
+               .dropdown-menu {
+               font-size: 16px;
+               border: none;
+               outline: 1px;
+               color: #01A3C9;
+               padding: 14px 16px;
+               background-color: #ffffff;
+               font-family: inherit; 
+               margin: 0; 
+               }
+   
+               .dropdown-item {
+               float: none;
+               color:  #01A3C9;
+               padding: 12px 16px;
+               text-decoration: none;
+               display: block;
+               text-align: left;
+               }
+   
+               .dropdown-item:hover {
+               display: block;
+               background-color: #01A3C9;
+               color: #ffffff;
+               }
+           
+   
+</style>
+</head>
+<body>
+    <ul class="nav justify-content-center">
+                
+        <li class="nav-item">
+            <a class =" nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Serial Details</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="http://127.0.0.1:5000/Add_Serial_no" >Add Serial Detail</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5000/Delete_Serial_no" >Delete Serial Detail</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class =" nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Variant Details</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="http://127.0.0.1:5000/Add_Variant_Details" >Add Variant Details</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5000/" >Delete Variant Details</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class =" nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Item Details</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="http://127.0.0.1:5000/Add_Item_Details" >Add Item Details</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5000/" >Delete Item Details</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5000/Edit_Item_Detail" >Edit Item Details</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5000/Add_Item_Total_Quantity" >Add Item Quantity</a>
+            </div>
+        </li>
+        
+    </ul>
+</body>

@@ -1,0 +1,43 @@
+ 
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      form{
+      width: 50%;
+      }
+      .form-control {
+      line-height: 2;
+      border: 1px solid #ddd;
+      border-radius: 2px;
+      }
+      .form-control:focus{
+      box-shadow: none;
+      border-color:#01A3C9;
+      }
+      .form-control:hover{
+      border-color: #01A3C9;
+      }
+      .bg-custom {
+      background-color: #01A3C9;
+      }
+      .btn-custom {
+      border-color: #01A3C9;
+      color: #01A3C9;
+      }
+      .btn-custom:hover {
+      background-color: #01A3C9;
+      color: #fff;
+      box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+      }
+      @media(max-width: 992px) {
+      form{
+      width: 80%;
+      }
+      }
+      @media(max-width: 575px) {
+      form{
+      width: 90%;
+      }
+      }
